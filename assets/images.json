@@ -1,8 +1,32 @@
 [
-    "plot.png",
-    "tree.png",
-    "barchart.png",
-    "waves.png",
-    "karls-picture.png",
-    "pie-chart.png"
+  {
+    "title": "Plot",
+    "path": "plot.png",
+    "url": "https://github.com/cetz-package/cetz/blob/master/gallery/plot.typ"
+  },
+  {
+    "title": "Tree Layout",
+    "path": "tree.png",
+    "url": "https://github.com/cetz-package/cetz/blob/master/gallery/tree.typ"
+  },
+  {
+    "title": "Clustered Barchart",
+    "path": "barchart.png",
+    "url": "https://github.com/cetz-package/cetz/blob/master/gallery/barchart.typ"
+  },
+  {
+    "title": "Waves",
+    "path": "waves.png",
+    "url": "https://github.com/cetz-package/cetz/blob/master/gallery/waves.typ"
+  },
+  {
+    "title": "Karl's Picture",
+    "path": "karls-picture.png",
+    "url": "https://github.com/cetz-package/cetz/blob/master/gallery/karls-picture.typ"
+  },
+  {
+    "title": "Pie Chart",
+    "path": "pie-chart.png",
+    "url": "https://github.com/cetz-package/cetz/blob/master/gallery/pie-chart.typ"
+  }
 ]

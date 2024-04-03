@@ -15,7 +15,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
     <link rel="stylesheet" href="index.css" />
+    <title>CeTZ</title>
   </head>
   <body>
     <h2 class="title primary">CeTZ</h2>
@@ -26,15 +32,28 @@
           <h2>ein <span class="primary">Typst</span> Zeichenpaket</h2>
           <p>A Typst drawing package by Johannes Wolf and fenjalien</p>
           <div class="header-buttons">
-            <a href="https://cetz-package.github.io/docs/overview.html" class="solid" target="_blank">Go to Docs</a>
-            <a href="https://github.com/cetz-package/cetz" class="outline" data="See Github" target="_blank"></a>
+            <a
+              href="https://cetz-package.github.io/docs/overview.html"
+              class="solid"
+              target="_blank"
+              >Go to Docs</a
+            >
+            <a
+              href="https://github.com/cetz-package/cetz"
+              class="outline"
+              data="See Github"
+              target="_blank"
+            ></a>
           </div>
         </section>
         <section class="carousel">
           <button id="left-arrow">
             <i class="fa-solid fa-angle-up left-arrow"></i>
           </button>
-          <div id="carousel-img" class="card"></div>
+          <div class="card">
+            <img id="carousel-img" />
+            <a id="carousel-title"></a>
+          </div>
           <button id="right-arrow">
             <i class="fa-solid fa-angle-up right-arrow"></i>
           </button>

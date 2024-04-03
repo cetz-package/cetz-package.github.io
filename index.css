@@ -45,10 +45,12 @@ a.outline::after {
   color: transparent;
 }
 
-a, button {
+a,
+button {
   transition: 0.5s all ease-in-out;
 }
-a:hover, button:hover {
+a:hover,
+button:hover {
   scale: 1.1;
   box-shadow: 0 0 15px rgb(0, 91, 151);
 }
@@ -96,7 +98,7 @@ section {
 }
 
 .divider {
-  height: 0.5px;
+  height: 1px;
   background: linear-gradient(45deg, #75bfff 2%, #1783e2 52%, #00335f 100%);
   margin-block: 2rem;
 }
@@ -117,6 +119,40 @@ section {
   margin-block-start: 2rem;
 }
 
+#carousel-img {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  transition: 0.8s all ease;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  border-radius: 1rem;
+}
+
+#carousel-title {
+  color: #03070b;
+  translate: 1rem 0;
+  width: 100%;
+}
+#carousel-title::after {
+  content: "\f178";
+  font-family: FontAwesome;
+  font-size: 1rem;
+  margin-inline-start: 0.5rem;
+  transition: all 0.2s linear 0s;
+  opacity: 0;
+}
+#carousel-title:hover {
+  scale: none;
+  box-shadow: none;
+  translate: 0.7rem 0;
+}
+#carousel-title:hover::after {
+  opacity: 1;
+}
+
 .carousel {
   display: flex;
   gap: 0.5rem;
@@ -124,15 +160,14 @@ section {
   padding-inline: 0.5rem;
 }
 .carousel .card {
-  transition: 0.8s all ease;
   background-color: white;
   height: 350px;
   width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 0.75rem;
   box-shadow: 0 0 100px 0px #37a2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .carousel button {
   height: 2.5rem;

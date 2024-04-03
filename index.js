@@ -3,6 +3,7 @@ import images from "./assets/images.json" assert { type: "json" };
 const leftArrow = document.getElementById("left-arrow");
 const rightArrow = document.getElementById("right-arrow");
 const carouselImg = document.getElementById("carousel-img");
+const carouselTitle = document.getElementById("carousel-title");
 
 let currentImgIndex = 0;
 const totalImages = images.length;
@@ -26,7 +27,11 @@ rightArrow.addEventListener("click", () => {
 });
 
 const setCarouselImg = () => {
-  carouselImg.style.backgroundImage = `url(/assets/${images[currentImgIndex]})`;
+  const imageData = images[currentImgIndex];
+  carouselImg.style.backgroundImage = `url(/assets/${imageData.path})`;
+  carouselTitle.innerText = imageData.title;
+  carouselTitle.href = imageData.url;
+  carouselTitle.target = '_blank';
 };
 
 setCarouselImg();
