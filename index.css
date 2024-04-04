@@ -1,0 +1,212 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #03070b;
+  color: white;
+  margin: 0;
+}
+
+a {
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  position: relative;
+  font-weight: 700;
+  padding: 0.75rem 1.25rem;
+  z-index: 1;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  width: -moz-max-content;
+  width: max-content;
+}
+a.solid {
+  background-color: #37a2ff;
+  color: #03070b;
+}
+a.outline {
+  background: linear-gradient(45deg, #75bfff 2%, #1783e2 52%, #00335f 100%);
+}
+a.outline::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background-color: #03070b;
+  border-radius: 0.25rem;
+  z-index: -1;
+}
+a.outline::after {
+  content: attr(data);
+  background: #37a2ff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+a,
+button {
+  transition: 0.5s all ease-in-out;
+}
+a:hover,
+button:hover {
+  scale: 1.1;
+  box-shadow: 0 0 15px rgb(0, 91, 151);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+section {
+  padding: 1.5rem;
+}
+
+.title {
+  padding: 1rem 0 0 1rem;
+  margin: 0;
+  position: relative;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2px;
+  inset-block-end: 0;
+  inset-inline-start: 2.5rem;
+  background: #37a2ff;
+}
+
+.header-content h1 {
+  font-size: 6rem;
+  margin: 0;
+}
+.header-content h2 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+.header-content p {
+  font-size: 0.85rem;
+}
+
+.header-buttons {
+  margin-block-start: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(45deg, #75bfff 2%, #1783e2 52%, #00335f 100%);
+  margin-block: 2rem;
+}
+
+.primary {
+  color: #37a2ff;
+}
+
+.left-arrow {
+  rotate: -90deg;
+}
+
+.right-arrow {
+  rotate: 90deg;
+}
+
+.typst-link {
+  margin-block-start: 2rem;
+}
+
+#carousel-img {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  transition: 0.8s all ease;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  border-radius: 1rem;
+}
+
+#carousel-title {
+  color: #03070b;
+  translate: 1rem 0;
+  width: 100%;
+}
+#carousel-title::after {
+  content: "\f178";
+  font-family: FontAwesome;
+  font-size: 1rem;
+  margin-inline-start: 0.5rem;
+  transition: all 0.2s linear 0s;
+  opacity: 0;
+}
+#carousel-title:hover {
+  scale: none;
+  box-shadow: none;
+  translate: 0.7rem 0;
+}
+#carousel-title:hover::after {
+  opacity: 1;
+}
+
+.carousel {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding-inline: 0.5rem;
+}
+.carousel .card {
+  background-color: white;
+  height: 350px;
+  width: 100%;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 100px 0px #37a2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carousel button {
+  height: 2.5rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(45deg, #75bfff 2%, #1783e2 52%, #00335f 100%);
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 550px) {
+  section,
+  .carousel {
+    padding: 3rem;
+  }
+  .carousel {
+    gap: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-block-start: 2rem;
+  }
+  .header-content h1 {
+    font-size: 8rem;
+  }
+  .header-content h2 {
+    font-size: 2rem;
+  }
+  .carousel {
+    flex: 1;
+  }
+  .carousel .card {
+    height: 300px;
+    box-shadow: 0 0 200px 0px #37a2ff;
+  }
+}/*# sourceMappingURL=index.css.map */
