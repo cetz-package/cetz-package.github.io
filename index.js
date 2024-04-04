@@ -1,9 +1,10 @@
-import images from "./assets/images.json" assert { type: "json" };
-
 const leftArrow = document.getElementById("left-arrow");
 const rightArrow = document.getElementById("right-arrow");
 const carouselImg = document.getElementById("carousel-img");
 const carouselTitle = document.getElementById("carousel-title");
+
+const response = await fetch('/assets/images.json');
+const images = await response.json();
 
 let currentImgIndex = 0;
 const totalImages = images.length;
